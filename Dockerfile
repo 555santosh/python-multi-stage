@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # ------------------- Stage 2: Final Stage ------------------------------
 
 # Use a slim Python 3.9 image as the final base image
-FROM python:3.9-slim
+FROM gcr.io/distroless/java21-debian12
 
 # Set the working directory to /app
 WORKDIR /app
